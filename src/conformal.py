@@ -56,6 +56,7 @@ if __name__ == "__main__":
     models = np.empty(0)
     alphas = np.empty(0)
 
+    print("Estimating prediction intervals ...")
     for interval in ["weighted_conf", "conf", "standard"]:
 
         for pitch in tqdm(range(250, len(batter_pitches)), total=len(batter_pitches)-250):

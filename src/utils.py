@@ -113,8 +113,8 @@ def plot(
     results.loc[results["Metric"] == "rolling_width", "alpha"] = np.nan
     results["Metric"] = results["Metric"].apply(lambda x: "Interval coverage" if x == "rolling_coverage" else "Interval width")
     results["Method"] = results["model"].replace({
-        "conf": "Conformal",
-        "weighted_conf": "Conformal Weighted",
+        "conf": "SCP",
+        "weighted_conf": "WCP",
         "standard": "OLS"
     })
     coverage_plot = (
