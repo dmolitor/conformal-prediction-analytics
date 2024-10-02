@@ -1,5 +1,5 @@
-# conformal-prediction-mlb
-Replication materials for Conformal Prediction: An Assumption-Free Approach to Quantifying Uncertainty in Baseball Forecasts
+# conformal-prediction-analytics
+Replication materials for Conformal Prediction for Robust Uncertainty Estimation in Sports Analytics
 
 ## Dependencies
 Install all dependencies in a virtual environment with:
