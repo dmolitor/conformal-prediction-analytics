@@ -138,11 +138,12 @@ if __name__ == "__main__":
     table = table.tab_spanner(md("**Confidence level 90%**"), ["covered_0.1", "width_0.1"])
     table = table.tab_spanner(md("**Confidence level 99%**"), ["covered_0.01", "width_0.01"])
     table = table.cols_label({
-        "covered_0.1": "Coverage",
-        "width_0.1": "Width",
-        "covered_0.01": "Coverage",
-        "width_0.01": "Width"
+        "covered_0.1": "Interval Coverage",
+        "width_0.1": "Interval Width",
+        "covered_0.01": "Interval Coverage",
+        "width_0.01": "Interval Width"
     })
+    table = table.cols_align(align="center")
     table.save(file=str(fig_dir / "coverage_and_width_table.png"), scale=5)
     
     # Output plot with Plotnine
